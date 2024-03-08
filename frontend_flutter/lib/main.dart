@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Get Request',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
@@ -72,6 +72,13 @@ class _HomePageState extends State<HomePage> {
                         greetings2 = decoded['greetings2'];
                       });
                     },
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.green,
+                        textStyle: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 10, 
+                        fontStyle: FontStyle.normal),
+                      ),
                     child: Text('Get Data'),
                   ),
                   SizedBox(width: 20), // Changed to width for horizontal spacing
@@ -82,6 +89,14 @@ class _HomePageState extends State<HomePage> {
                         greetings2 = '';
                       });
                     },
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.green,
+                        textStyle: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 10, 
+                        fontStyle: FontStyle.normal),
+                      ),
+
                     child: Text('Reset'),
                   ),
                 ],
